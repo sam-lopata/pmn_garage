@@ -10,13 +10,11 @@ class GarageRepository extends EntityRepository implements GarageRepositoryInter
     public function searchByCountry(string $country)
     {
         $query = $this->getEntityManager()->createQuery(
-                sprintf(
-                    "SELECT g FROM %s g 
-                        LEFT JOIN g.country c 
-                        WHERE c.name = :country",
-                    Garage::class
-                )
+            sprintf(
+                "SELECT g FROM %s g LEFT JOIN g.country c WHERE c.name = :country",
+                Garage::class
             )
+        )
             ->setParameter('country', $country);
 
         return $query->getResult();

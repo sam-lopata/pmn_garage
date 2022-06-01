@@ -4,5 +4,4 @@ composer.lock
 /.idea/*
 .phpunit.result.cache
 /logs/*
-db_schema.mwb.bak
-
+notes.md
