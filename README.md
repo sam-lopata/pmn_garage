@@ -3,7 +3,7 @@ Garages life emulation.
 
 ## Note
 The app implemented on top of  https://github.com/slimphp/Slim-Skeleton - I decided to use it because you mentioned it as your main tool.
-But changed the structure slightly.
+But changed the structure slightly. Overall nice tool.
 
 As all the actions to fetch by country/owner/location etc. will be pretty same I implemented only GarageRepository::searchByCountry().
 And there are also 2 default actions to list all and view one item. Same with tests - implemented couple as example.
@@ -34,6 +34,7 @@ You will note that difference. The produced format is:
     }
 }
 ```
+Additionally added CI build workflow to Github actions.
 
 ## Requirements
 - git
